@@ -2,14 +2,14 @@ import React from 'react'
 
 function Button({
     children,
-    type = 'button',
+    type = 'submit',
     bgColor = 'bg-blue-500',
     textColor = 'text-white',
     className = '',
     ...props
 }) {
   return (
-    <div className= {`px-4 py-2 rounded-lg text-center ${bgColor} ${textColor} ${className}`} type={type} {...props}>{children}</div>
+    <button  className= {`px-4 py-2 rounded-lg text-center ${bgColor} ${textColor} ${className}`} type={type} {...props}>{children}</button>
   )
 }
 
